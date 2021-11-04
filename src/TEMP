@@ -1,0 +1,13 @@
+void getTemp()
+{
+
+    tempC = mlx.readObjectTempC();//in C object
+    tempCA = mlx.readAmbientTempC();
+
+    tempF = mlx.readObjectTempF(); //Fah. Object
+    tempFA = mlx.readAmbientTempF();//Fah Ambient
+
+    tempK = tempC + 273.15;// Object Kelvin
+    tempKA =  tempCA + 273.15;//Ambient Kelvin
+
+}
